@@ -17,22 +17,78 @@
 
     }
 
+    #nav-bar {
+      color: #D3BEB4 !important;
+      background-color: #1D1817;
+      border-radius: 2px;
+      font-size: larger;
+    }
+
+    .navbar-nav .nav-link {
+      color: #D3BEB4 !important;
+      font-weight: 700;
+    }
+
+    .nav-item .nav-link:hover {
+      background: #D3BEB4;
+      color: #1D1817 !important;
+      border-radius: 5px;
+
+    }
+
+    #search-btn {
+      background: #1D1817;
+      color: #D3BEB4;
+      border: 2px solid #DC5420;
+
+    }
+    #search-btn:hover {
+    background:#DC5420 ;
+    color:  #1D1817;
+    border-radius: 5px;
+    
+}
+
+  
+ 
+
+#home-menu{
+    width: 150px;
+    height: 46px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    background:#DC5420 ;
+    color:  #1D1817;
+
+}
+#home-menu:hover {
+  
+  background:  #1D1817 ;;
+  color:#DC5420 ;}
+ 
+
+
     .home-content {
       background-image: url("home-img/background-img.jpg");
       width: 100%;
-      height: 100vh;
-      background-position: 90%;
-      margin-top: 0px;
-      padding-top: 0px;
+      height: 95vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Ensure the image covers the entire background */
+      background-position: center;
+      color: #D3BEB4;
+
     }
 
     .home-text {
       display: flex;
       flex-direction: column;
-      width: 30%;
-      padding: 30px;
-      /*margin: 100px 0 0 90px;*/
-
+      width: 40%;
+      padding: 100px 0 0 150px;
 
     }
 
@@ -53,53 +109,54 @@
       width: 150px;
       height: 36px;
       border-radius: 5px;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg " id="nav-bar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="logo "><img —Pngtree—coffee beans coffee leaves
-            transparent_9059834.png>Gentle Roast</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="feedback.html">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <div class="home-content">
-      <div class="home-text">
-        <div class="text-title">The Gentle Roast</div>
-        <div class="text">Discover the Essence of Exquisite Coffee Beans.Each bean is miraculously sourced from the
-          finest
-          coffee growing regions </div>
-        <button id="home-menu"> Shop Now > </button>
+  <nav class="navbar navbar-expand-lg " id="nav-bar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo " style="color: #DC5420;"><img —Pngtree—coffee beans coffee leaves
+          transparent_9059834.png>Gentle Roast</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="feedback.html">Feedbacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
+  </nav>
+  <div class="home-content">
+    <div class="home-text">
+      <div class="text-title">The <span style="color: #DC5420;"> Gentle </span>Roast</div>
+      <div class="text">Discover the Essence of Exquisite Coffee Beans.Each bean is miraculously sourced from the
+        finest
+        coffee growing regions </div>
+      <button id="home-menu"> Shop Now > </button>
+    </div>
+  </div>
 
 </body>
 
