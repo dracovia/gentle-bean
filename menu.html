@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Shop Menu</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0;
+            padding: 0;
+            color: #56280e;
+            background-color: #f4e4cb;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .menu-container {
+            width:70%;
+            margin: 50px 20px;
+            padding: 30px;
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);*/
+            border-radius: 12px;
+        }
+
+        .menu-title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #f4e4cb;
+            background-color: #56280e;
+            padding: 20px;
+            border-radius: 8px;
+
+        }
+
+        .coffee-categories {
+            margin-top: 40px;
+        }
+
+        .category h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 20px;
+            border-bottom: 4px solid #56280e;
+        }
+
+        .caffee-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+            /* gap: 20px;*/
+        }
+
+        .coffee-type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #56280e;
+            border-radius: 6px;
+            width: 200px;
+        }
+
+        .coffee-type:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .coffee-type-img {
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 10px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .coffee-type span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .coffee-type button {
+            font-size: larger;
+            color: #f4e4cb;
+            background-color: #56280e;
+            border-radius: 8px;
+            padding: 10px;
+            width: 70%;
+            height: 40px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            color: #56280e;
+            background-color: #f4e4cb;
+        }
+        .receipt {
+            width: 15%;
+            border: 2px solid #56280e;
+            margin: 50px auto;
+            height: 50vh;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            bottom: 0;
+            right: 25px;
+        }
+        .receipt h3 {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px dashed #56280e;
+            text-align: center;
+            color: #56280e;
+            margin-top: 0px;
+        }
+        .receipt .total{
+            border-top: 2px dashed #56280e;
+            padding: 10px;
+        }
+        .back-home {
+            font-size: larger;
+            color: #f4e4cb;
+            background-color: #56280e;
+            border-radius: 8px;
+            padding: 10px;
+            width: 70%;
+            height: 40px;
+            text-transform: uppercase;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="menu-container">
+        <div class="menu-title">Coffee Shop Menu</div>
+        <div class="coffee-categories">
+            <div class="category">
+                <h3>Brewed Coffees (Black Coffees)</h3>
+                <div class="caffee-types">
+                    <div class="coffee-type">
+                        <span>Drip Coffee</span>
+                        <img class="coffee-type-img" src="menu-img\Drip Coffee.webp" alt="Drip Coffee">
+                
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>French Press</span>
+                        <img class="coffee-type-img" src="menu-img\french press.png" alt="French Press">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Turkish Coffee</span>
+                        <img class="coffee-type-img" src="menu-img\Turkish Coffee.png" alt="Turkish Coffee">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Espresso-Based Coffees</h3>
+                <div class="caffee-types">
+                    <div class="coffee-type">
+                        <span>Americano</span>
+                        <img class="coffee-type-img" src="menu-img\ice-coffee-americano.png" alt="Americano">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Espresso</span>
+                        <img class="coffee-type-img" src="menu-img\espresso.png" alt="Espresso">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Cappuccino</span>
+                        <img class="coffee-type-img" src="menu-img\cappuccino.png" alt="Cappuccino">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Macchiato</span>
+                        <img class="coffee-type-img" src="menu-img\macchiato.png" alt="Macchiato">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Milk-Based Coffees</h3>
+                <div class="caffee-types">
+                    <div class="coffee-type">
+                        <span>Cortado</span>
+                        <img class="coffee-type-img" src="menu-img\Cortado.webp" alt="Cortado">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Latte</span>
+                        <img class="coffee-type-img" src="menu-img\latte.png" alt="Latte">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Flat White</span>
+                        <img class="coffee-type-img" src="menu-img\flat-white.png" alt="Flat White">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h3>Sweet or Flavored Coffees</h3>
+                <div class="caffee-types">
+                    <div class="coffee-type">
+                        <span>Mocha</span>
+                        <img class="coffee-type-img" src="menu-img\mocha.png" alt="Mocha">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Caramel Macchiato</span>
+                        <img class="coffee-type-img" src="menu-img\Caramel Macchiato.webp" alt="Caramel Macchiato">
+                        <button>Buy</button>
+                    </div>
+                    <div class="coffee-type">
+                        <span>Affogato</span>
+                        <img class="coffee-type-img" src="menu-img\Affogato.png" alt="Affogato">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="receipt" id="receipt">
+        <h3>Receipt</h3>
+        <ul class="receipt-items" id="receipt-items"></ul>
+        <div class="total" id="total">Total: $0.00</div>
+        <button class="back-home">home</button>
+    </div>
+</body>
+
+</html>
