@@ -139,6 +139,39 @@
         background-color: #d3beb4;
         color: #1d1817;
       }
+      .faq-container
+      {
+        width: 60%;
+        background: white;
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 50px 20px;
+        margin: 50px auto;
+      }
+      .faq-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .faq-item {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color:#1d1817 ;
+      }
+      .faq-answer{
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        color: #d3beb4;
+        display: none;
+        background-color: #1d1817;
+        border-left: 2px solid #007BFF;
+      }
     </style>
   </head>
   <body>
@@ -179,19 +212,46 @@
     </header>
     <div class="contact-container">
       <div class="map">
-        <img src="home-img\map.png" />
+        <img src="home-img/map.png" />
       </div>
       <div class="contact-info">
         <h2>Get in Touch</h2>
         <p>
           We are here to assist you with any questions ,feedbacks, or
-          inquires.Feel free to reach out to us at any time!
+          inquires. Feel free to reach out to us at any time!
         </p>
         <p>
           <strong>Address:</strong>Glenview Avenue Reversby NSN 2212 Padstow,UK
         </p>
         <p><strong>Phone:</strong> +1 (234) 567-8009</p>
         <p><strong>Email:</strong>Gentlebean@business.com</p>
+      </div>
+    </div>
+    <div class="faq-container">
+      <div class="faq-title">FAQs</div>
+      <div class="faq-item">
+        What are your openning hours?
+        <div class="faq-answer">
+          Our openning hours are are from 9:00 AM to 8:00 PM , Monday to Sunday. 
+        </div>
+      </div>
+      <div class="faq-item">
+        How can I place an order?
+        <div class="faq-answer">
+          You can place an order through our website by calling our customer support.
+        </div>
+      </div>
+      <div class="faq-item">
+        Do you offer home delivery ?
+        <div class="faq-answer">
+          Yes, we offer home delivery for orders within gthe city limits
+        </div>
+      </div>
+      <div class="faq-item">
+        Is  Wi-Fi available?
+        <div class="faq-answer">
+          Yes, we provide free Wi-Fi for our customers .
+        </div>
       </div>
     </div>
     <div class="message-container">
@@ -210,5 +270,23 @@
         <button type="submit">Send a Message</button>
       </form>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () =>{
+       const faqItems = 
+       document.querySelectorAll('.faq-item');
+       faqItems.forEach(item => {
+        item.addEventListener('click',() => {
+          const answer = item.querySelector('.faq-answer');
+          if(answer.style.display ==='block')
+        {
+          answer.style.display= 'none';
+        } else {
+          answer.style.display='block';
+        }
+        });
+       });
+      });
+      
+      </script>
   </body>
 </html>
